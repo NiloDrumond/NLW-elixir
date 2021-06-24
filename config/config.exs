@@ -10,7 +10,7 @@ use Mix.Config
 config :wabanex,
   ecto_repos: [Wabanex.Repo]
 
-config :wabanex, Wabanex.Rep,
+config :wabanex, Wabanex.Repo,
   migration_primary_key: [type: :binary_id],
   migration_foreign_key: [type: :binary_id]
 
