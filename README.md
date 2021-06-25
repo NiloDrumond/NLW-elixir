@@ -1,19 +1,10 @@
 # Wabanex
 
-To start your Phoenix server:
+Projeto desenvolvido ao longo da NextLevelWeek: Together, oferecido pela Rocketseat
 
-  * Install dependencies with `mix deps.get`
-  * Create and migrate your database with `mix ecto.setup`
-  * Start Phoenix endpoint with `mix phx.server`
+## Além
 
-Now you can visit [`localhost:4000`](http://localhost:4000) from your browser.
-
-Ready to run in production? Please [check our deployment guides](https://hexdocs.pm/phoenix/deployment.html).
-
-## Learn more
-
-  * Official website: https://www.phoenixframework.org/
-  * Guides: https://hexdocs.pm/phoenix/overview.html
-  * Docs: https://hexdocs.pm/phoenix
-  * Forum: https://elixirforum.com/c/phoenix-forum
-  * Source: https://github.com/phoenixframework/phoenix
+- Full Coverage tests
+- Campos de altura e peso para usuário
+- Delete e Update de usuários e treinos
+- Rota para pegar IMC a partir do ID do usuário
