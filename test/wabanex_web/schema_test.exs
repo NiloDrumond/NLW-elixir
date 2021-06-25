@@ -4,7 +4,13 @@ defmodule WabanexWeb.SchemaTest do
 
   describe "users queries" do
     test "when a valid id is given, returns the user", %{conn: conn} do
-      params = %{email: "teste@teste.com", name: "Teste", password: "123456"}
+      params = %{
+        name: "Teste",
+        email: "teste@teste.com",
+        password: "123456",
+        weight: 56.5,
+        height: 1.75
+      }
 
       {:ok, %User{id: user_id}} = Users.Create.call(params)
 
@@ -37,7 +43,9 @@ defmodule WabanexWeb.SchemaTest do
           createUser(input: {
             email: "teste2@teste.com",
             name: "Teste2",
-            password: "123456"
+            password: "123456",
+            weight: 56.5,
+            height: 1.75
           }) {
             id
             name
