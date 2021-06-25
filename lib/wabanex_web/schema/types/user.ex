@@ -18,4 +18,13 @@ defmodule WabanexWeb.Schema.Types.User do
     field :weight, non_null(:float), description: "Users weight"
     field :height, non_null(:float), description: "Users height"
   end
+
+  input_object :update_user_input do
+    field :id, non_null(:uuid4), description: "User's id"
+    field :name, :string, description: "User's name"
+    field :email, :string, description: "User's email"
+    field :password, :string, description: "User's password"
+    field :weight, :float, description: "Users weight"
+    field :height, :float, description: "Users height"
+  end
 end

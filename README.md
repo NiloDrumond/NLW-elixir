@@ -7,8 +7,8 @@ Projeto desenvolvido ao longo da NextLevelWeek: Together, oferecido pela Rockets
 - [ ] Full Coverage tests (mesmo que excluindo modulos externos)
 - [x] Campo de peso para usuários
 - [x] Campo de altura para usuários
-- [ ] Delete de usuários
+- [x] Delete de usuários
 - [ ] Delete de treinos
-- [ ] Update de usuários
+- [x] Update de usuários
 - [ ] Update de treinos
 - [ ] Rota para pegar IMC a partir do ID do usuário

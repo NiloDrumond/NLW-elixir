@@ -28,7 +28,7 @@ defmodule Wabanex.Users.DeleteTest do
 
       response = Users.Delete.call(params)
 
-      expected_response = {:error, "User not found"}
+      expected_response = "TODO"
 
       assert response == expected_response
     end
