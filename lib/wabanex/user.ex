@@ -6,13 +6,14 @@ defmodule Wabanex.User do
 
   @primary_key {:id, Ecto.UUID, autogenerate: true}
 
-  @fields [:email, :name, :password, :weight]
+  @fields [:email, :name, :password, :weight, :height]
 
   schema "users" do
     field :email, :string
     field :name, :string
     field :password, :string
     field :weight, :float
+    field :height, :float
 
     has_many :trainings, Training
 
