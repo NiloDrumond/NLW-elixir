@@ -19,6 +19,12 @@ defmodule WabanexWeb.Schema.Types.Root do
 
       resolve &UserResolver.get/2
     end
+
+    field :get_training, type: :training do
+      arg :id, non_null(:uuid4)
+
+      resolve &TrainingResolver.get/2
+    end
   end
 
   object :root_mutation do

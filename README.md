@@ -7,6 +7,7 @@ Projeto desenvolvido ao longo da NextLevelWeek: Together, oferecido pela Rockets
 - [ ] Full Coverage tests (mesmo que excluindo modulos externos)
 - [x] Campo de peso para usuários
 - [x] Campo de altura para usuários
+- [x] Get de treinos
 - [x] Delete de usuários
 - [ ] Delete de treinos
 - [x] Update de usuários
