@@ -1,4 +1,4 @@
-defmodule Wabanex.Users.DeleteTest do
+defmodule Wabanex.Users.GetTest do
   use Wabanex.DataCase, async: true
   alias Wabanex.{User, Users}
 
@@ -6,7 +6,7 @@ defmodule Wabanex.Users.DeleteTest do
     test "when the id is not a valid UUID" do
       params = "invalid_id"
 
-      response = Users.Delete.call(params)
+      response = Users.Get.call(params)
 
       expected_response = {:error, "Invalid UUID"}
 
@@ -16,7 +16,7 @@ defmodule Wabanex.Users.DeleteTest do
     test "when there is no user with the id" do
       params = "a72bee4f-1d2a-4409-80c1-d4bbf6ced8cb"
 
-      response = Users.Delete.call(params)
+      response = Users.Get.call(params)
 
       expected_response = {:error, "User not found"}
 
@@ -34,7 +34,7 @@ defmodule Wabanex.Users.DeleteTest do
 
       {:ok, %User{id: user_id}} = Users.Create.call(params)
 
-      response = Users.Delete.call(user_id)
+      response = Users.Get.call(user_id)
 
       assert {:ok, %User{}} = response
     end

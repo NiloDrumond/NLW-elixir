@@ -24,5 +24,6 @@ defmodule Wabanex.Exercise do
     exercise
     |> cast(params, @fields)
     |> validate_required(@fields)
+    |> assoc_constraint(:training)
   end
 end
