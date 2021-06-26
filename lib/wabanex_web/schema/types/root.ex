@@ -62,5 +62,12 @@ defmodule WabanexWeb.Schema.Types.Root do
       resolve &TrainingResolver.update/2
       middleware TranslateErrors
     end
+
+    field :delete_training, type: :training do
+      arg :id, non_null(:uuid4)
+
+      resolve &TrainingResolver.delete/2
+      middleware TranslateErrors
+    end
   end
 end

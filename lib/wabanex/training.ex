@@ -23,11 +23,12 @@ defmodule Wabanex.Training do
     %__MODULE__{}
     |> cast(params, @fields)
     |> validate_required(@fields)
+    |> foreign_key_constraint(:user_id)
     |> cast_assoc(:exercises)
   end
 
   def changeset(:update, training, params \\ %{}) do
     training
-    |> Ecto.Changeset.cast(params, @fields)
+    |> cast(params, @fields)
   end
 end

@@ -9,7 +9,7 @@ Projeto desenvolvido ao longo da NextLevelWeek: Together, oferecido pela Rockets
 - [x] Campo de altura para usuários
 - [x] Get de treinos
 - [x] Delete de usuários
-- [ ] Delete de treinos
+- [x] Delete de treinos
 - [x] Update de usuários
 - [x] Update de treinos (exceto exercicios)
 - [ ] Rota para pegar IMC a partir do ID do usuário
