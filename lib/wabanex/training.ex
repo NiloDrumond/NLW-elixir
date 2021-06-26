@@ -25,4 +25,9 @@ defmodule Wabanex.Training do
     |> validate_required(@fields)
     |> cast_assoc(:exercises)
   end
+
+  def changeset(:update, training, params \\ %{}) do
+    training
+    |> Ecto.Changeset.cast(params, @fields)
+  end
 end

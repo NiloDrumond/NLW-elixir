@@ -11,5 +11,5 @@ Projeto desenvolvido ao longo da NextLevelWeek: Together, oferecido pela Rockets
 - [x] Delete de usuários
 - [ ] Delete de treinos
 - [x] Update de usuários
-- [ ] Update de treinos
+- [x] Update de treinos (exceto exercicios)
 - [ ] Rota para pegar IMC a partir do ID do usuário

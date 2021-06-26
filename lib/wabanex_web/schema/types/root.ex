@@ -55,5 +55,12 @@ defmodule WabanexWeb.Schema.Types.Root do
       resolve &TrainingResolver.create/2
       middleware TranslateErrors
     end
+
+    field :update_training, type: :training do
+      arg :input, non_null(:update_training_input)
+
+      resolve &TrainingResolver.update/2
+      middleware TranslateErrors
+    end
   end
 end

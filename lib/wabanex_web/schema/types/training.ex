@@ -17,4 +17,11 @@ defmodule WabanexWeb.Schema.Types.Training do
     field :end_date, non_null(:string), description: "Training's end date"
     field :exercises, list_of(:create_exercise_input), description: "Training's exercises"
   end
+
+  input_object :update_training_input do
+    field :id, non_null(:uuid4), description: "Training's id"
+    field :start_date, :string, description: "Training's start date"
+    field :end_date, :string, description: "Training's end date"
+    # field :exercises, list_of(:create_exercise_input), description: "Training's exercises"
+  end
 end
