@@ -8,7 +8,7 @@ defmodule WabanexWeb.Router do
   scope "/api", WabanexWeb do
     pipe_through :api
 
-    get "/", IMCController, :index
+    get "/imc/:id", IMCController, :show
   end
 
   scope "/api" do
